@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta lang="pt-br" charset="utf-8">
+	<title>Home</title>
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<script type="text/javascript" src="javascript/usuario.js"> </script>
+	<script type="text/javascript">
+		verificacoes();
+
+
+	</script>
+</head>
+<body onload="carregarTabelaCliente()">
+	<div id="menuprincipal">
+		
+		<div id="logo">
+			<h1><a href="home.html">Clientes</a></h1>
+		</div>
+		
+		<div id="opcoes">
+			<ul>
+				<li class="btn-cadastrar"><a href="cadastrocliente.html">Cadastrar Cliente</a></li>
+				<li class="btn-cadastrar"><a href="#" onclick="sair()">sair</a></li>
+
+			</ul>
+		</div>
+	</div>
+						<hr /><br/>
+		<div id="conteudo">
+			<div id="tabela">
+				<h1>Tabela de Clientes</h1>
+			<table id="tabelaClientes" border="1">
+				<tr>
+					<th>Nome</th>
+  					<th>Sobrenome</th>
+  					<th>Data Nascimento</th>
+  					<th>CPF</th>
+  					<th>RG</th>
+  					<th>Orgão Expedidor</th>
+  					<th>Editar</th>
+				</tr>
+			</table>
+			</div>
+		</div>
+		
+		<div id="rodape"></div>
+	
+</body>
+</html>

@@ -1,0 +1,250 @@
+		*{
+			box-sizing: border-box;
+			margin: 0;
+			padding: 0;
+		}
+		a{
+			text-decoration: none;
+		}
+		body
+		{
+			
+			font-family: 'Josefin Sans', sans-serif;
+			color: white;
+			background-size: auto 700px;
+			background-image: linear-gradient(to right top, #533694, #4d4fa7, #4a66b6, #4c7bc2, #5790cc, #5995ce, #5d9bcf, #61a0d0, #5598cb, #498fc6, #3c87c1, #2e7fbc);
+		}
+		table
+		{
+			border-collapse: collapse;
+			margin-left:auto; 
+    		margin-right:auto;
+
+		}
+		ul{
+			list-style-type: none;
+  			margin: 0;
+  			padding: 0;
+		}
+		li{
+			display: inline;
+		}
+		/* unvisited link */
+		a:link {
+  			color: white;
+		}
+
+		/* visited link */
+		a:visited {
+ 		color: white;
+		}
+
+		/* mouse over link */
+		a:hover {
+  			text-decoration: underline;
+  			cursor: pointer;
+		}
+
+		/* selected link */
+		a:active {
+  			color: white;
+		}
+
+		input[type=text], select {
+  			width: 100%;
+  			padding: 12px 20px;
+  			margin: 8px 0;
+  			display: inline-block;
+  			border: 1px solid #ccc;
+  			border-radius: 4px;
+  			box-sizing: border-box;
+		}
+		input[type=password], select {
+  			width: 100%;
+  			padding: 12px 20px;
+  			margin: 8px 0;
+  			display: inline-block;
+  			border: 1px solid #ccc;
+  			border-radius: 4px;
+  			box-sizing: border-box;
+		}
+
+		input[type=submit], select {
+  			width: 100%;
+  			background-color: rgb(89, 66, 244);
+  			color: white;
+  			padding: 14px 20px;
+ 			margin: 8px 0;
+  			border: none;
+  			border-radius: 4px;
+  			cursor: pointer;
+  			font-family: 'Josefin Sans', sans-serif;
+			font-size: 16px;
+		}
+
+		#areaLogin{
+			width: 100%;
+			height: 100%;
+		}
+
+		#areaCampos{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 500px;
+			width: 100%;
+		}
+
+		#formulario{
+			border: 1px solid gray;
+			width: 300px;
+			height: 275px;
+			border-radius: 8px;
+			background: gray;
+		}
+
+
+		#formularioCadastro{
+			width: 95%;
+			height: 500px;
+			border-radius: 8px;
+			margin: 0 auto;
+		}
+
+		#campos{
+			width: 100%;
+			padding: 10px;
+		}
+
+		#campo4, #campo5{
+			display: inline-block;
+			width: 49%;
+		}
+		#tabelaClientes {
+  			font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  			border-collapse: collapse;
+ 			width: 100%;
+ 			text-align: center;
+		}
+
+		#tabelaClientes td, #tabelaClientes th {
+  			border: 1px solid #ddd;
+  			padding: 8px;
+		}
+
+		
+		#tabelaClientes th{
+  			text-align: center;
+  			background-color: #533694;
+  			color: white;
+		}
+		#menuprincipal{
+			width: 100%;
+			height: 80px;
+			display: flex;		
+			flex-direction: row;
+			justify-content: space-between;
+			align-items: flex-end;
+			
+		}
+
+		#logo{
+
+			padding-top: 10px;
+			padding-left: 40px;
+		}
+		#opcoes{
+
+			padding-bottom: 5px;
+			padding-right: 10px;
+		}
+		#conteudo{
+			display: flex;
+			justify-content: center;
+			width: 100%;
+			//background: rgba(76, 175, 80, 0.3);
+
+		}
+		#rodape{
+			border: 1px solid black;
+
+		}
+		#tabela{
+			padding-top: 10px;
+		}
+
+		#formulario{
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: flex-start;
+		}
+
+		.centralizarDiv{
+			margin: 0 auto;
+     		width: 450px;
+     		border: 2px solid #5ffbf1;
+  			border-radius: 5px;
+  			background: rgba(76, 175, 80, 0.3)
+		}
+
+		.espacos{
+			padding-top: 5px;
+		}
+
+		.botaoPersonalizado{
+			//border-radius:12px;
+			font-size: 16px;
+			//background-color: #ba83ca;
+			font-family: 'Josefin Sans', sans-serif;
+			//color: white;
+			//border: 2px solid gray;
+		}
+
+		.button:hover {
+			background-color: rgb(77, 56, 224);
+		}
+
+		.flex{
+			display: flex;
+			flex-direction: column;
+		}
+
+		.textoCabecalho{
+			text-align: center;
+			padding-top: 5px;
+		}
+
+		.btn-cadastrar{
+			border-radius: 8px;
+			padding-left: 3px;
+			padding-right: 3px;
+			padding-top: 2px;
+			text-decoration: none;
+			color: white;
+			background-color: #4219b5;
+		}
+
+
+		.excluir:hover{
+			text-decoration: underline;
+
+		}
+		.excluir:active{
+			border: none;
+			color: none;
+
+		}
+		.excluir{
+
+			text-decoration: none;
+			color: white;
+			cursor: pointer;
+			background: none;
+			border: none;
+
+			font-family: 'Josefin Sans', sans-serif;
+   			font-size: 16px;
+
+		}
+

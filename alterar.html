@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta lang="pt-br" charset="utf-8">
+	<title>Inserir</title>
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+    <script type="text/javascript" src="javascript/usuario.js"> </script>
+</head>
+<body class="flex" onload="preencherCampos()">
+	<div id="menuprincipal">
+		
+		<div id="logo">
+			<h1><a href="home.html">Alteração de Clientes</a></h1>
+		</div>
+		
+		<div id="opcoes">
+			<ul>
+				<li class="btn-cadastrar"><a href="home.html">Home</a></li>
+				<li class="btn-cadastrar"><a href="cadastrocliente.html">Cadastrar Cliente</a></li>
+				<li class="btn-cadastrar"><a href="#" onclick="sair()">sair</a></li>
+
+			</ul>
+		</div>
+
+		</div>
+		<hr /><br/>
+		<div class="textoCabecalho"><h1>Alterar Cliente</h1></div>
+		<div>
+			<div id="formularioCadastro">
+
+				<div id="campo0" class="espacos"><label for="nome">Key</label><br />
+				<input type="text" id="key" name="key" size="60" readonly>
+				</div>
+								<div id="campo1" class="espacos"><label for="nome">Nome</label><br />
+				<input type="text" id="nome" name="nome" placeholder="Seu nome" size="60" maxlength="60">
+				</div>
+				
+				<div id="campo2" class="espacos"><label for="sobrenome">Sobrenome</label><br />
+				<input type="text" id="sobrenome" name="sobrenome" placeholder="Seu sobrenome" size="60" maxlength="60">
+				</div>
+				
+				<div id="campo3" class="espacos" min="1900-01-01" max="2019-12-31"><label for="data">Data Nascimento</label><br />
+				<input type="date" id="data" name="data">
+				</div>
+				
+				<div id="campo4" class="espacos"><label for="cpf">CPF</label><br />
+				<input type="text" id="cpf" name="cpf" placeholder="Seu cpf" size="15" maxlength="11">
+				</div>
+				
+				<div id="campo5" class="espacos"><label for="rg">RG</label><br />
+				<input type="text" id="rg" name="rg" placeholder="Seu rg" maxlength="11">
+				</div>
+				
+				<div id="campo6" class="espacos"><label for="ogExp">Orgão Expedidor</label><br />
+				<input type="text" id="ogExp" name="ogExp" placeholder="Orgão Expedidor do seu rg" maxlength="60"><br />
+				<input class="button" type="submit" class="botaoPersonalizado" value="Alterar" onclick="alterarCliente()">
+			</div>
+			</div>
+		
+		<div id="rodape"></div>
+	
+</body>
+</html>

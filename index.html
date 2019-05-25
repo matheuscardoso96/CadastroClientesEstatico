@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta lang="pt-br" charset="utf-8">
+	<title>Área de login</title>
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<script type="text/javascript" src="javascript/usuario.js"></script>
+	<script type="text/javascript">
+	var v = localStorage.getItem("SituacaoLogin");
+	if (v == undefined) {
+		localStorage.setItem("SituacaoLogin", 0);
+	}
+
+	if ( v == 1) 
+	{
+		window.stop();
+		window.location.href = "home.html";
+
+	}
+	
+</script>
+</head>
+<body onload="carregarBanco();">
+	<div id="areaCampos">
+		<div id="formulario">
+		<div name="areaLogin" id="areaLogin">
+			<div class="textoCabecalho"><h1>Login</h1></div>
+			<div id="campos">
+			<label>Usuário</label><br />
+			<input id="usuario" type="text" required><br />
+			<label>Senha</label><br />
+			<input type="password" id="senha" required><br />
+			<input class="button" type="submit" class="botaoPersonalizado" value="Entrar" onclick="login();">
+			<h4><a href="cadastro.html">Cadastrar</a></h4>
+			</div>
+		</div>
+		</div>
+
+	</div>
+	<button onclick="limparDados();">limpar dados</button>
+</body>
+
+</html>

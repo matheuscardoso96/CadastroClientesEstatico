@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta lang="pt-br" charset="utf-8">
+	<title>Área de Cadastro</title>
+	<link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/estilo.css">
+	<script type="text/javascript" src="javascript/usuario.js"></script>
+</head>
+<body onload="carregarBanco();">
+	<div id="areaCampos">
+		<div id="formulario">
+		<div name="areaLogin" id="areaLogin">
+			<div class="textoCabecalho"><h1>Cadastro</h1></div>
+			<div id="campos">
+			<label>Usuário</label><br />
+			<input id="usuario" type="text" required><br />
+			<label>Senha</label><br />
+			<input type="password" id="senha" required><br />
+			<input class="button" type="submit" value="Cadastrar" onclick="redireciona();">
+			</div>
+		</div>
+		</div>
+
+	</div>
+	
+</body>
+<script type="text/javascript">
+	
+			function redireciona()
+		{
+			var resultado = criarUsuario();
+			if (resultado == true) {
+				window.location.href = "index.html";
+			}
+			
+		}
+</script>
+</html>
